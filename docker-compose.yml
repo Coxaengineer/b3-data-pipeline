@@ -9,6 +9,7 @@ x-airflow-common: &airflow-common
     AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
     _PIP_ADDITIONAL_REQUIREMENTS: "requests==2.32.3 pandas==2.2.3 pyarrow==18.1.0 pyspark==3.5.3"
     BRAPI_TOKEN: "wr8cw2n4ateRqxCyhKKbZb"
+    JAVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64
   volumes:
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
